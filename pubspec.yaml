@@ -3,7 +3,7 @@ description: Новини про технології які завжди з т�
 
 publish_to: 'none'
 
-version: 0.0.0+1
+version: 0.0.1+1
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
