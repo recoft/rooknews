@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:rooknews/constants.dart';
 
 import 'pages/something_went_wrong_page.dart';
 import 'pages/loading_page.dart';
@@ -17,6 +18,11 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      title: 'Rooknews',
+      theme: ThemeData(
+        scaffoldBackgroundColor: kBgLisghtColor,
+        accentColor: kPrimaryColor,
+      ),
       home: FutureBuilder(
         future: _initialization,
         builder: (context, snapshot) {
